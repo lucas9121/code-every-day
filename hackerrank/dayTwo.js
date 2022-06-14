@@ -6,3 +6,12 @@ function plusMinus(arr) {
     let zero = (arr.filter((num) => num === 0).length / arr.length).toFixed(6)
     console.log(positiveNums + ' \n' + negativeNums + ' \n' + zero)
 }
+
+//Write a program that prints a staircase of size n using #
+function staircase(n) {
+    let hash = '#'
+    for(let i = 1; i <= n; i++){
+        let triangle = hash.repeat(i)
+        console.log(triangle.padStart(n))
+    }
+}
