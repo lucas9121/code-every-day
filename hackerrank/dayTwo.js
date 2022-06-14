@@ -7,6 +7,8 @@ function plusMinus(arr) {
     console.log(positiveNums + ' \n' + negativeNums + ' \n' + zero)
 }
 
+plusMinus([3, 0, -2, 5, -8, 87])
+
 //Write a program that prints a staircase of size n using #
 function staircase(n) {
     let hash = '#'
@@ -15,3 +17,18 @@ function staircase(n) {
         console.log(triangle.padStart(n))
     }
 }
+
+staircase(8)
+
+//Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.
+
+function miniMaxSum(arr) {
+    let minNum = Math.min(...arr)
+    let maxNum = Math.max(...arr)
+    let sum = arr.reduce((total, num) => total + num, 0)
+    let miniSum = sum - maxNum
+    let maxSum = sum - minNum
+    console.log(miniSum, maxSum)
+}
+
+miniMaxSum([7, 69, 2, 221, 8974])
