@@ -2,6 +2,7 @@
 // ls = [0, 1, 3, 6, 10]
 // The corresponding sums are (put together in a list): [20, 20, 19, 16, 10, 0]
 // The function parts_sums (or its variants in other languages) will take as parameter a list ls and return a list of the sums of its parts as defined above.
+// Take a look at performance: some lists have thousands of elements.
 
 function partsSums(ls){
     const length = ls.length
